@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pumpkin Catalog | Captain Farm's</title>
+<meta content="Pumpkin catalog grouped by shape and style sections." name="description"/>
+<link href="styles.css" rel="stylesheet"/>
+<style>
+    .catalog {
+      max-width: 1200px;
+      text-align: left;
+    }
+
+    .catalog-intro {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      padding: 1rem 1.25rem;
+      background: #fff3e0;
+      border: 1px solid #e0a96d;
+      border-radius: 10px;
+    }
+
+    .catalog-intro p {
+      margin: 0.35rem 0;
+    }
+
+    .category {
+      clear: both;
+      margin: 2rem 0 2.5rem;
+    }
+
+    .category-banner {
+      display: block;
+      width: 100%;
+      margin: 0 0 1.25rem;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      background: #f57c00;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .pumpkin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-auto-rows: 1fr;
+      align-items: stretch;
+      gap: 1rem;
+      margin-top: 0;
+    }
+
+    .pumpkin-card {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 0.9rem;
+    }
+
+    .pumpkin-media {
+      margin: 0 0 0.75rem;
+    }
+
+    .pumpkin-media img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #fff8f0;
+      border: 1px solid #e0a96d;
+      padding: 0.25rem;
+    }
+
+
+    .pumpkin-media.item-placeholder {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      box-sizing: border-box;
+      border-radius: 8px;
+      background: #fff8f0;
+      border: 1px dashed #e0a96d;
+      padding: 0.25rem;
+    }
+
+    .pumpkin-body {
+      display: grid;
+      gap: 0.6rem;
+    }
+
+    .pumpkin-card .card-title {
+      margin: 0;
+      font-size: 1.15rem;
+    }
+
+    .meta.kv {
+      display: grid;
+      gap: 0.45rem;
+      margin: 0;
+    }
+
+    .meta.kv .row {
+      display: grid;
+      grid-template-columns: 10ch 1fr;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.45rem 0.6rem;
+      background: #fff8f0;
+      border: 1px solid #e0a96d;
+      border-radius: 8px;
+    }
+
+    .meta.kv dt {
+      margin: 0;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #6a4308;
+    }
+
+    .meta.kv dd {
+      margin: 0;
+      font-weight: 600;
+      color: #4a2c00;
+    }
+
+    .meta.kv dd.placeholder {
+      color: #8a5a1f;
+      font-style: italic;
+    }
+
+    .field-note {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      border: 1px dashed #e0a96d;
+      background: #fff7e6;
+      font-size: 0.72rem;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+
+    .category-note {
+      margin: 0 0 0.85rem;
+      color: #6a4308;
+      font-weight: 600;
+    }
+
+    .category-count {
+      font-weight: 700;
+    }
+
+    @media (max-width: 600px) {
+      .meta.kv .row {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Captain Farm's</h1>
+<nav>
+<a href="index.html">Home</a>
+<a aria-current="page" href="pumpkins.html">Pumpkin Catalog</a>
+<a href="order.html">Place Order</a>
+</nav>
+</header>
+<main>
+<section aria-labelledby="all-pumpkins-title" class="catalog">
+<h2 id="all-pumpkins-title">All Pumpkin Varieties</h2>
+<div aria-labelledby="section-mini" class="category">
+<h3 class="category-banner" id="section-mini">Mini <span class="category-count">(8)</span></h3>
+<div class="pumpkin-grid">
+
+<!-- CARD 01 | Spark -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Spark pumpkin" decoding="async" loading="lazy" src="images/Spark.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Spark</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$2.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>0.5-1 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 02 | Mini Black -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Mini Black pumpkin" decoding="async" loading="lazy" src="images/Midnight.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Mini Black</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$2.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>0.5-1 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 03 | Mini Orange -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Mini Orange pumpkin" decoding="async" loading="lazy" src="images/Orangita.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Mini Orange</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$2.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>1-1.5 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 04 | Mini White -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Mini White pumpkin" decoding="async" loading="lazy" src="images/Casperita.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Mini White</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$2.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>0.5-1 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 05 | Mini Mac N Cheese -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Mini Mac N Cheese pumpkin" decoding="async" loading="lazy" src="images/Betsy.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Mini Mac N Cheese</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$2.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>1-2 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 06 | Blaze -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Blaze pumpkin" decoding="async" loading="lazy" src="images/Blaze.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Blaze</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$2.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>2-3 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 07 | Phantomita -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Phantomita pumpkin" decoding="async" loading="lazy" src="images/Phantomita.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Phantomita</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$2.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>1-1.5 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 08 | Lil' Pum-ke-mon -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Lil' Pum-ke-mon pumpkin" decoding="async" loading="lazy" src="images/Lil' Pum-ke-mon.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Lil' Pum-ke-mon</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$2.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>1.5 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+</div>
+</div>
+<div aria-labelledby="section-traditional-orange" class="category">
+<h3 class="category-banner" id="section-traditional-orange">Traditional Orange <span class="category-count">(8)</span></h3>
+<div class="pumpkin-grid">
+
+<!-- CARD 09 | Palm Pumpkins -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Palm Pumpkins pumpkin" src="images/Prankster.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Palm Pumpkins</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$3.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>3 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 10 | Small Orange -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Small Orange pumpkin" src="images/Small Orange Pumpkin.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Small Orange</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$5.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>4-6 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 11 | Medium Orange -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Medium Orange pumpkin" src="images/Medium Orange Pumpkin.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Medium Orange</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$7.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>8-12 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 12 | Large Orange -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Large Orange pumpkin" src="images/Large Orange Pumpkin.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Large Orange</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$10.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>14-18 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+
+<!-- CARD 14 | XL Orange -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="XL Orange pumpkin" src="images/Extra Large Orange Pumpkin.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">XL Orange</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$15.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>20-30 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 15 | Tall and Mighty -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Tall and Mighty pumpkin" src="images/Early Giant.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Tall and Mighty</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$15.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>25-30 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 16 | Mega Orange -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Mega Orange pumpkin" src="images/Denali.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Mega Orange</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$25.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>40-60 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 17 | Prize Winners -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Prize Winners pumpkin" src="images/Prize Winners.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Prize Winners</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>MP</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>50-200 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+</div>
+</div>
+<div aria-labelledby="section-flat-stackers" class="category">
+<h3 class="category-banner" id="section-flat-stackers">Flat and Stackers <span class="category-count">(6)</span></h3>
+<div class="pumpkin-grid">
+<!-- CARD 20 | Multicolored -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Multicolored pumpkin" decoding="async" loading="lazy" src="images/Green Eggs and Ham.png">
+</img></figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Multicolored</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$8.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>30 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 21 | White Stackers -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="White Stackers pumpkin" decoding="async" loading="lazy" src="images/Moonlight.png">
+</img></figure>
+<div class="pumpkin-body">
+<h4 class="card-title">White Stackers</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$8.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>18 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 22 | Blue -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Blue pumpkin" decoding="async" loading="lazy" src="images/Blue Eyes.png">
+</img></figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Blue</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$8.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>25 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 23 | Green -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Green pumpkin" decoding="async" loading="lazy" src="images/Royal Blue.png">
+</img></figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Green</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$8.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>14 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 24 | Summer Sky -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Summer Sky pumpkin" decoding="async" loading="lazy" src="images/Summer Sky.png">
+</img></figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Summer Sky</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$8.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>18-25 Lbs</dd></div>
+</dl>
+</div>
+</article>
+<!-- CARD 33 | New England Cheddar -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="New England Cheddar pumpkin" decoding="async" loading="lazy" src="images/New England Cheddar.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">New England Cheddar</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$8.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>15 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+</div>
+</div><div aria-labelledby="section-world-color" class="category">
+<h3 class="category-banner" id="section-world-color">World of Color <span class="category-count">(9)</span></h3>
+<div class="pumpkin-grid">
+
+<!-- CARD 27 | Apples -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Apples pumpkin" decoding="async" loading="lazy" src="images/Speckled Apple.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Apples</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$5.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>3-5 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 28 | Blancos -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Blancos pumpkin" decoding="async" loading="lazy" src="images/Blanco.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Blancos</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$5.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>4-6 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 29 | Fireball -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Fireball pumpkin" decoding="async" loading="lazy" src="images/Fireball.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Fireball</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$5.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>7-9 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 30 | Kabocha -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Kabocha pumpkin" decoding="async" loading="lazy" src="images/Sunshine (Kabocha).png">
+</img></figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Kabocha</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$4.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>3-5 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 31 | Matcha Kabocha -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Matcha Kabocha pumpkin" decoding="async" loading="lazy" src="images/Space Station Kabocha).png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Matcha Kabocha</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$4.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>3.5 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 32 | Redeye -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Redeye pumpkin" decoding="async" loading="lazy" src="images/Redeye.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Redeye</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$5.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>18 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 34 | Fairytale -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Fairytale pumpkin" decoding="async" loading="lazy" src="images/Fairytale.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Fairytale</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$8.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>20 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 36 | Princess -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Princess pumpkin" decoding="async" loading="lazy" src="images/Porcelain Doll.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Princess</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$8.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>20-24 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 37 | Lacy -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Lacy pumpkin" decoding="async" loading="lazy" src="images/One Too Many.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Lacy</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$9.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>20 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+</div>
+</div>
+<div aria-labelledby="section-warty-bumpy" class="category">
+<h3 class="category-banner" id="section-warty-bumpy">Warty and Bumpy <span class="category-count">(6)</span></h3>
+<div class="pumpkin-grid">
+
+<!-- CARD 38 | HoarGarth -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="HoarGarth pumpkin" decoding="async" loading="lazy" src="images/HoarGarth.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">HoarGarth</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$4.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>3-4 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 39 | Grizzly Bears -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Grizzly Bears pumpkin" decoding="async" loading="lazy" src="images/Grizzly Bear.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Grizzly Bears</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$5.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>5-8 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 40 | Kettle Corn -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Kettle Corn pumpkin" decoding="async" loading="lazy" src="images/Kettle Corn.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Kettle Corn</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$5.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>15-18 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 41 | Corn Cobb -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Corn Cobb pumpkin" decoding="async" loading="lazy" src="images/Corn Cobb.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Corn Cobb</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$5.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>15-18 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 42 | Marina De Chioggia -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Marina De Chioggia pumpkin" decoding="async" loading="lazy" src="images/Marina De Chioggia.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Marina De Chioggia</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$10.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>6-12 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 43 | Bumpies -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Bumpies pumpkin" decoding="async" loading="lazy" src="images/Scarface.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Bumpies</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$8.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>12-16 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+</div>
+</div>
+<div aria-labelledby="section-not-so-round" class="category">
+<h3 class="category-banner" id="section-not-so-round">Not-So-Round <span class="category-count">(6)</span></h3>
+<div class="pumpkin-grid">
+
+
+<!-- CARD 44 | Starfish -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Starfish pumpkin" decoding="async" loading="lazy" src="images/Starfish.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Starfish</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$5.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>6-8 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 45 | American Tondo -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="American Tondo pumpkin" decoding="async" loading="lazy" src="images/American Tondo.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">American Tondo</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$5.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>4-6 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 46 | Swans -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Swans pumpkin" decoding="async" loading="lazy" src="images/Speckled Swan.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Swans</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$5.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>6-8 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 47 | Green Cushaw -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Green Cushaw pumpkin" decoding="async" loading="lazy" src="images/Cushaw Green.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Green Cushaw</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$6.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>15-20 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 48 | Tri-Colored Cushaw -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Tri-Colored Cushaw pumpkin" decoding="async" loading="lazy" src="images/Cushaw Tricolor.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Tri-Colored Cushaw</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$6.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>15-20 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 49 | Mac N Cheese -->
+<article class="pumpkin-card">
+<figure class="pumpkin-media">
+<img alt="Mac N Cheese pumpkin" decoding="async" loading="lazy" src="images/Mac n Cheese.png"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Mac N Cheese</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$7.00</dd></div>
+<div class="row"><dt>Avg Weight</dt><dd>3-5 Lbs</dd></div>
+</dl>
+</div>
+</article>
+
+</div>
+</div>
+<div aria-labelledby="section-miscellaneous" class="category">
+<h3 class="category-banner" id="section-miscellaneous">Miscellaneous <span class="category-count">(3)</span></h3>
+<div class="pumpkin-grid">
+
+<!-- CARD 50 | Mini Straw Bale -->
+<article class="pumpkin-card catalog-item">
+<figure class="pumpkin-media">
+<img alt="Mini Straw Bale" decoding="async" loading="lazy" src="images/mini-hay-bale.jpg"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Mini Straw Bale</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$6.00</dd></div>
+<div class="row"><dt>Avg Size</dt><dd>5in x 9in x 15in</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 51 | Straw Bale -->
+<article class="pumpkin-card catalog-item">
+<figure class="pumpkin-media">
+<img alt="Straw Bale" decoding="async" loading="lazy" src="images/hay-bale.jpg"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Straw Bale</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$12.00</dd></div>
+<div class="row"><dt>Avg Size</dt><dd>14in x 18in x 36 in</dd></div>
+</dl>
+</div>
+</article>
+
+<!-- CARD 52 | Corn Stalk Bundle -->
+<article class="pumpkin-card catalog-item">
+<figure class="pumpkin-media">
+<img alt="Corn Stalk Bundle" decoding="async" loading="lazy" src="images/corn-stalk-bundle.jpg"/>
+</figure>
+<div class="pumpkin-body">
+<h4 class="card-title">Corn Stalk Bundle</h4>
+<dl class="meta kv">
+<div class="row"><dt>Price</dt><dd>$18.00</dd></div>
+<div class="row"><dt>Avg Size</dt><dd>12 Stalks</dd></div>
+</dl>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+</main>
+<footer>
+<p>© 2026 Our Pumpkin Patch</p>
+</footer>
+</body>
+</html>
